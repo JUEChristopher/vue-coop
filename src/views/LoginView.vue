@@ -1,5 +1,5 @@
 <script setup>
-import { inject, reactive } from 'vue'
+import Password from 'primevue/password'
 
 const router = inject('router')
 const session = inject('session')
@@ -41,7 +41,8 @@ let login = () => {
             </div>
             <div class="form-input">
                 <label for="password">Mot de passe</label>
-                <input type="password" name="password" v-model="memberInfos.password">
+                <!-- <input type="password" name="password" v-model="memberInfos.password"> -->
+                <Password v-model="memberInfos.password" toggleMask></Password>
             </div>
             <div class="form-btn">
                 <button>Se connecter</button>

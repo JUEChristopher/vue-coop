@@ -1,5 +1,4 @@
 <script setup>
-import { inject, reactive } from 'vue'
 
 const router = inject('router')
 

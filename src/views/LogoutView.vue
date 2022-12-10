@@ -1,5 +1,4 @@
 <script setup>
-import { inject } from "@vue/runtime-core"
 
 const router = inject('router')
 const session = inject('session')
