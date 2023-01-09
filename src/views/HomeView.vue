@@ -1,19 +1,30 @@
 <script setup>
-import Button from 'primevue/button';
-
-let test = "Connexion"
 
 const user = inject('user')
 </script>
 
 <template>
-  <h1>Home</h1>
-  <router-link to="/register"><p>Register</p></router-link>
-  <router-link to="/login"><p>Login</p></router-link>
-  <router-link v-if="user.isConnected" to="/logout"><p>Logout</p></router-link>
-  <br>
-  <Button :label="test" />
+  <Navbar/>
+  <div id="home">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+  #home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 25px 50px;
+
+    .card{
+      min-width: 325px;
+      height: 175px;
+      background-color: #20086E;
+      border-radius: 4px;
+    }
+  }
 </style>
