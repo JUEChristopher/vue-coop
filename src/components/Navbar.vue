@@ -7,6 +7,7 @@ const user = inject('user')
 <template>
     <div class="navbar">
         <div class="nav-left">
+            <router-link to="/">Accueil</router-link>
             <router-link to="/members">Membres</router-link>
         </div>
         <div class="nav-right">
@@ -20,7 +21,7 @@ const user = inject('user')
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -31,6 +32,11 @@ const user = inject('user')
 
     a{
         color: #EBF4FF;
+    }
+
+    .nav-left{
+        display: flex;
+        gap: 28px;
     }
 }
 </style>

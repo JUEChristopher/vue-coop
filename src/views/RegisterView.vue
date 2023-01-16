@@ -1,5 +1,4 @@
 <script setup>
-
 const router = inject('router')
 
 const member = reactive({
@@ -20,6 +19,7 @@ let register = () => {
     console.error(e)
   })
 }
+
 </script>
 
 

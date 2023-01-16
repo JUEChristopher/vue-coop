@@ -1,19 +1,19 @@
 <script setup>
-
 const user = inject('user')
+
 </script>
 
 <template>
   <Navbar/>
-  <div id="home">
+  <main>
     <div class="card"></div>
     <div class="card"></div>
     <div class="card"></div>
-  </div>
+  </main>
 </template>
 
-<style scoped lang="scss">
-  #home{
+<style lang="scss" scoped>
+  main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -23,7 +23,7 @@ const user = inject('user')
     .card{
       min-width: 325px;
       height: 175px;
-      background-color: #20086E;
+      background-color: var(--primary-color);
       border-radius: 4px;
     }
   }

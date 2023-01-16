@@ -1,5 +1,12 @@
 @import './reset.css';
 
+:root{
+    --primary-color: #20086E;
+    --secondary-color: #0F003D;
+    --accentuation-color: #531EFF;
+    --text-color: #EBF4FF;
+}
+
 body{
     background-color: #0F003D;
     font-family: 'Segoe UI', sans-serif;
