@@ -7,6 +7,9 @@ const user = inject('user')
 <template>
     <div class="navbar">
         <div class="nav-left">
+            <router-link to="/">
+                <img id="logo" src="../assets/logo.svg" alt="">
+            </router-link>
             <router-link to="/">Accueil</router-link>
             <router-link to="/members">Membres</router-link>
         </div>
@@ -36,7 +39,12 @@ const user = inject('user')
 
     .nav-left{
         display: flex;
+        align-items: center;
         gap: 28px;
+
+        #logo{
+            width: 40px;
+        }
     }
 }
 </style>

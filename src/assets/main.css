@@ -7,7 +7,15 @@
     --text-color: #EBF4FF;
 }
 
-body{
+body,button{
     background-color: #0F003D;
     font-family: 'Segoe UI', sans-serif;
+}
+
+main{
+    margin: 45px 75px;
+}
+
+a:visited{
+	color: #c5c5c5;
 }

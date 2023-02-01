@@ -10,7 +10,6 @@ provide('user', useUserStore())
 </script>
 
 <template>
-
+  <Navbar/>
   <RouterView />
-
 </template>

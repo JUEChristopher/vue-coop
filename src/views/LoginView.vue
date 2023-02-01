@@ -25,12 +25,10 @@ let login = () => {
         console.log("Veuillez remplir les champs")
     }
 }
-
 </script>
 
 
 <template>
-    <Navbar/>
     <main>
         <div id="login-card">
             <h1>Connexion</h1>
@@ -45,7 +43,7 @@ let login = () => {
                     <input type="password" name="password" v-model="memberInfos.password">
                 </div>
                 <div id="submission">
-                    <Button label="Se connecter" />
+                    <button>Se connecter</button>
                     <small>
                         Pas encore inscrit ?
                         <router-link to="/register">
@@ -73,7 +71,7 @@ let login = () => {
             flex-direction: column;
             align-items: center;
             gap: 45px;
-            padding: 45px 50px;
+            padding: 45px 60px;
             background-color: var(--primary-color);
             border: 1px solid var(--accentuation-color);
             border-radius: 4px;
@@ -84,6 +82,7 @@ let login = () => {
             }
 
             form{
+                width: 280px;
                 display: flex;
                 flex-direction: column;
                 gap: 25px;
@@ -91,6 +90,24 @@ let login = () => {
                 .form-input{
                     display: flex;
                     flex-direction: column;
+                    gap: 12px 0px;
+
+                    input{
+                        background-color: var(--secondary-color);
+                        color: var(--text-color);
+                        font-size: 16px;
+                        padding: 10px 18px;
+                        border: 0;
+                        border-radius: 4px;
+                        // box-shadow: 0px 0px 5px 2px var(--accentuation-color);
+                        outline: 1px solid var(--accentuation-color);
+
+                        &:focus{
+                            box-shadow: 0px 0px 5px 2px var(--accentuation-color);
+                            transition: 0.1s ease-in-out;
+
+                        }
+                    }
                 }
 
                 #submission{
@@ -98,6 +115,16 @@ let login = () => {
                     flex-direction: column;
                     align-items: center;
                     gap: 10px;
+
+                    button{
+                        width: 100%;
+                        border-radius: 4px;
+                        background-color: #531EFF;
+                        color: #EBF4FF;
+                        font-size: 16px;
+                        border: 0;
+                        padding: 10px 20px;
+                    }
 
                     small{
                         font-size: 14px;
