@@ -38,10 +38,19 @@ api.get('members')
             align-self: flex-start;
         }
 
-        div{
-            background-color: var(--primary-color);
-            border: 1px solid var(--accentuation-color);
-            border-radius: 4px;
+        #members-list{
+            display: flex;
+            flex-direction: column;
+            gap: 25px 0px;
+            background-color: rgb(184, 139, 139);
+            width: 300px;
+
+            div{
+                background-color: var(--primary-color);
+                border: 1px solid var(--accentuation-color);
+                border-radius: 4px;
+            }
         }
+
     }
 </style>
