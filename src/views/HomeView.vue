@@ -8,6 +8,14 @@ const user = inject('user')
     <div class="card"></div>
     <div class="card"></div>
     <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
   </main>
 </template>
 
@@ -22,6 +30,7 @@ const user = inject('user')
       min-width: 325px;
       height: 175px;
       background-color: var(--primary-color);
+      border: 1px solid var(--accentuation-color);
       border-radius: 4px;
     }
   }
