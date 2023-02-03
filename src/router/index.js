@@ -23,6 +23,16 @@ const router = createRouter({
       path: '/logout',
       name: 'logout',
       component: () => import('@/views/LogoutView.vue')
+    },
+    {
+      path: '/members',
+      name: 'members',
+      component: () => import('@/views/MembersView.vue')
+    },
+    {
+      path: '/new_channel',
+      name: 'new-channel',
+      component: () => import('@/views/NewChannelView.vue')
     }
   ]
 })

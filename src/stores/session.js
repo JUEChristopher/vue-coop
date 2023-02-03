@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import { reactive } from "vue";
 
 export const useSessionStore = defineStore('session', () => {
   let sessionData = reactive({

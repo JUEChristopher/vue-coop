@@ -14,7 +14,7 @@ export default defineConfig({
     vue(),
     AutoImport({
       imports: ["vue"],
-      dirs: ["./src/stores"],
+      dirs: ["./src"],
     }),
     Components(),
   ],

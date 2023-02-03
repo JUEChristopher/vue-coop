@@ -1,6 +1,21 @@
 @import './reset.css';
 
-body{
-    background-color: #151515;
-    color: #F4F4F4;
+:root{
+    --primary-color: #20086E;
+    --secondary-color: #0F003D;
+    --accentuation-color: #531EFF;
+    --text-color: #EBF4FF;
+}
+
+body,button{
+    background-color: #0F003D;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+main{
+    margin: 45px 75px;
+}
+
+a:visited{
+	color: #c5c5c5;
 }
