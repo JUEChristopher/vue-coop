@@ -4,8 +4,8 @@ const session = inject('session')
 const user = inject('user')
 
 const memberInfos = reactive({
-    email: 'christopher.jue@outlook.com',
-    password: 'Fovuko)5'
+    email: '',
+    password: ''
 })
 
 let login = () => {

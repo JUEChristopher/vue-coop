@@ -1,8 +1,10 @@
 <script setup>
 
+const session = inject('session')
+
 const members = ref([])
 
-api.get('members')
+api.get('members?token=' + session.sessionData.token)
 .then(data => {
     if(data.message){
         console.log(data.message)
