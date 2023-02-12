@@ -33,7 +33,12 @@ const router = createRouter({
       path: '/new_channel',
       name: 'new-channel',
       component: () => import('@/views/NewChannelView.vue')
-    }
+    },
+    {
+      path: '/channel/:id',
+      name: 'channel',
+      component: () => import('@/views/ChannelView.vue')
+    },
   ]
 })
 
