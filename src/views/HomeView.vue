@@ -24,10 +24,12 @@ api.get('channels?token=' + session.sessionData.token)
       <Button label="Nouvelle conversation" />
     </router-link>
     <div id="channels-list">
-      <div v-for="channel in channels" class="channel-card">
-        <h2>{{ channel.label }}</h2>
-        <p>{{ channel.topic }}</p>
-      </div>
+      <router-link :to="{name: 'channel', params: { id: channel.id}}" v-for="channel in channels">
+        <div class="channel-card">
+          <h2>{{ channel.label }}</h2>
+          <p>{{ channel.topic }}</p>
+        </div>
+      </router-link>
     </div>
 
   </main>
